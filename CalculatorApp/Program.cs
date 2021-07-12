@@ -4,7 +4,7 @@ namespace CalculatorApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Input number1:");
             var operand1 = double.Parse(Console.ReadLine());
