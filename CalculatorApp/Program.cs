@@ -4,12 +4,12 @@ namespace CalculatorApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Input number1:");
             var operand1 = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Input oepration:");
+            Console.WriteLine("Input operation (+, -, *):");
             var operation = Console.ReadLine()[0];
 
             Console.WriteLine("Input number2:");
@@ -25,6 +25,10 @@ namespace CalculatorApp
 
                 case '-':
                     result = operand1 - operand2;
+                    break;
+
+                case '*':
+                    result = operand1 * operand2;
                     break;
 
                 default:
